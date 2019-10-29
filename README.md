@@ -16,7 +16,7 @@ foo@bar:~$ docker-compose build && docker-compose up
 
 ```console
 
-foo@bar:~$ docker-compose run app sh -c "pytest"
+foo@bar:~$ docker-compose run app pytest
 
 ```
 ## Rest Api
@@ -31,3 +31,8 @@ foo@bar:~$ docker-compose run app sh -c "pytest"
 * Django;
 * Docker;
 * Postegresql.
+
+## TODO:
+* more tests for transfer module;
+* fix swagger problem (swagger can't see params for TransferPostSerializer).
+
