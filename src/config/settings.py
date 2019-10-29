@@ -114,7 +114,10 @@ REST_FRAMEWORK = {
 }
 
 
-SWAGGER_SETTINGS = {'JSON_EDITOR': True, }
+SWAGGER_SETTINGS = {'JSON_EDITOR': True,
+                    'SUPPORTED_SUBMIT_METHODS': [
+                        'get', 'post',
+                    ]}
 
 LOGIN_URL = 'rest_framework:login'
 
