@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import Transfer
-from apps.user.models import User
 
 
 class TransferSerializer(serializers.ModelSerializer):
