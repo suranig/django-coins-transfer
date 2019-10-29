@@ -12,20 +12,10 @@ class TransferListCreateAPIView(APIView):
     Current user must be sender or reveiver of transfer.
 
     POST
+
     Current user send coins to other user.
-    parameters:
-        - in: query
-          name: amount
-          schema:
-            type: integer
-            required: true
-            description: Coins amount to send.
-        - in: query
-          name: receiver
-          schema:
-            type: integer
-            required: true
-            description: User ID who will get your coins.
+    :amount -- Coins amount to send.
+    :receiver -- User ID who will get your coins.
     """
 
     def get(self, request):
@@ -43,9 +33,21 @@ class TransferListCreateAPIView(APIView):
     def post(self, request):
         """
         POST
-        Current user send coins to other user.
-        :amount -- Coins amount to send.
-        :receiver -- User ID who will get your coins.
+
+       ---
+        parameters:
+        - in: query
+          name: amount
+          schema:
+            type: integer
+            required: true
+            description: Coins amount to send.
+        - in: query
+          name: receiver
+          schema:
+            type: integer
+            required: true
+            description: User ID who will get your coins.
         """
         serializer = TransferPostSerializer(data=request.data)
         if serializer.is_valid():
