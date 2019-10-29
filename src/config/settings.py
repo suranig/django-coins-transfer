@@ -116,9 +116,13 @@ REST_FRAMEWORK = {
 
 SWAGGER_SETTINGS = {'JSON_EDITOR': True, }
 
+LOGIN_URL = 'rest_framework:login'
+
+LOGOUT_URL = 'rest_framework:logout'
+
 LOGIN_REDIRECT_URL = '/api/v1/transfers/'
 
-LOGOUT_REDIRECT_URL= '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
