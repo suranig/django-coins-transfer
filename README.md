@@ -27,7 +27,6 @@ foo@bar:~$ docker-compose run app pytest
 ### GET /api/v1/transfers/ -- History of coins transfers for current user
 ### POST /api/v1/transfers/{"amount": 5, "receiver": 4} -- Send coins by current user to receiver
 
-https://github.com/django/django
 ## Used technologies:
 * [Django](https://github.com/django/django);
 * [Django rest framework](https://github.com/encode/django-rest-framework);
