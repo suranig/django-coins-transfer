@@ -1,2 +1,97 @@
-[31;1mCommandError: Unable to serialize database: 'NoneType' object has no attribute '_meta'
-[0m[
+[
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$xiEwcV7SflGO$rCCvCDRaq5jPhLJMN80933pfaQG2Thz0mE/AagojAVs=",
+    "last_login": "2019-10-28T18:45:49.326Z",
+    "is_superuser": true,
+    "username": "tumidaj",
+    "first_name": "",
+    "last_name": "",
+    "email": "wsz@g.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-10-22T20:16:01.467Z",
+    "balance": 32,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$nLtKrTfIilrs$u/M6S1DbN0aEBWcDw3uULn++RE2AM+C7U2n+dcz17OM=",
+    "last_login": "2019-10-28T20:24:17.261Z",
+    "is_superuser": true,
+    "username": "gates",
+    "first_name": "",
+    "last_name": "",
+    "email": "g@o.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-10-22T20:40:49.744Z",
+    "balance": 4978,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$f5C1U0JPsmir$a9ny9SwG+81nT5XRpgewm9JKBQ8j8KOEQqJdlqJSHwY=",
+    "last_login": "2019-10-24T12:24:14.665Z",
+    "is_superuser": false,
+    "username": "Arnlod",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-10-23T17:47:57.183Z",
+    "balance": 4981,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$KwdBt5KZXI4g$Z0UPjHvfWDn4jtjAZ6ap4ykPSQ08PqJzbuIiy4xK48g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "skygateuser1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-10-27T15:08:48Z",
+    "balance": 5005,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$AJCP95pcJZw7$joFKnySDaKRoS8cS7BGDB+ekGBu6O1sxFTcVvaMkduc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tumiwisista",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-10-27T15:09:48.478Z",
+    "balance": 5004,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
