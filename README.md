@@ -38,5 +38,6 @@ https://github.com/django/django
 
 ## TODO:
 Low priority
-* fix swagger problem (swagger can't see params for TransferPostSerializer).
+* fix swagger problem (swagger can't see params for TransferPostSerializer);
+* simple fronted for transfer app with Vue/React/Angular.
 
