@@ -88,3 +88,19 @@ def test_transfer_post_user_tried_to_send_coins_to_himself(client,
         "receiver": current_user.id,
     }
     client.post('/api/v1/transfers/', data=data)
+
+
+def test_transfer_post_endpoint_receiver_doesnt_exists(client,
+                                                       django_user_model):
+    username = "user1"
+    password = "bar"
+    # current user
+    django_user_model.objects.create_user(username=username,
+                                          password=password)
+    client.login(username=username, password=password)
+    data = {
+        "amount": 145,
+        "receiver": 2321,
+    }
+    response = client.post('/api/v1/transfers/', data=data)
+    assert response.status_code == 400
