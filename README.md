@@ -33,6 +33,6 @@ foo@bar:~$ docker-compose run app pytest
 * Postegresql.
 
 ## TODO:
-* more tests for transfer module;
+Low priority
 * fix swagger problem (swagger can't see params for TransferPostSerializer).
 
