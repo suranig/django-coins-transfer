@@ -27,12 +27,17 @@ foo@bar:~$ docker-compose run app pytest
 ### GET /api/v1/transfers/ -- History of coins transfers for current user
 ### POST /api/v1/transfers/{"amount": 5, "receiver": 4} -- Send coins by current user to receiver
 
+https://github.com/django/django
 ## Used technologies:
-* Django;
-* Docker;
-* Postegresql.
+* [Django](https://github.com/django/django);
+* [Django rest framework](https://github.com/encode/django-rest-framework);
+* [Docker](https://github.com/docker-library/docker);
+* [Postgresql](https://www.postgresql.org/);
+* [Pytest](https://docs.pytest.org/en/latest/);
+* [Drf-yasg](https://github.com/axnsan12/drf-yasg).
 
 ## TODO:
-* more tests for transfer module;
-* fix swagger problem (swagger can't see params for TransferPostSerializer).
+Low priority
+* fix swagger problem (swagger can't see params for TransferPostSerializer);
+* simple fronted for transfer app with Vue/React/Angular.
 

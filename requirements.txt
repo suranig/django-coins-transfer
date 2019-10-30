@@ -1,9 +1,9 @@
-django
-djangorestframework
+django==2.2.6
+djangorestframework==3.10.3
 psycopg2
 psycopg2-binary
 
-pytest
-pytest-django
+pytest==5.2.2
+pytest-django==3.6.0
 
-drf-yasg
+drf-yasg==1.17.0
