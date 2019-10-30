@@ -1,0 +1,2 @@
+[31;1mCommandError: Unable to serialize database: 'NoneType' object has no attribute '_meta'
+[0m[
