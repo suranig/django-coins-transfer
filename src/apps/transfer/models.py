@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.core.exceptions import ValidationError
-from django.db import models
+from django.db import models, transaction
 
 
 class Transfer(models.Model):
@@ -29,6 +29,7 @@ class Transfer(models.Model):
             raise ValidationError('Mininium amount to send is 1.',
                                   code='invalid')
 
+    @transaction.atomic
     def save(self, *args, **kwargs):
         self.full_clean()
         self.sender.balance = self.sender.balance - self.amount
